@@ -1,0 +1,33 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "reactjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vishaal-Ganesan/React-.git"
+  },
+  "keywords": [
+    "react",
+    "vishaal"
+  ],
+  "author": "Vishaal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vishaal-Ganesan/React-/issues"
+  },
+  "homepage": "https://github.com/Vishaal-Ganesan/React-#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

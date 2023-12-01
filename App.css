@@ -1,0 +1,27 @@
+.logo {
+    width: 100px;
+}
+.header{
+    display: flex;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.appbar{
+    display: flex;
+    justify-content: space-between;
+}
+.menuItems{
+    display: flex;
+
+}
+.feed-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,8 +1,14 @@
+import {React} from "react"
+import ReactDOM from "react-dom/client";
+import './App.css'
+import MainApp from "./MainApp";
+// const parent = React.createElement("div",{},React.createElement("h4",{},"Let's go"));
 
-const parent = React.createElement("div",{},React.createElement("h4",{},"Let's go"));
 
 
-console.log(parent);
+
+
+
+// console.log(parent);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-console.log(root);
-root.render(parent);
+root.render(<MainApp/>);
