@@ -1,12 +1,15 @@
 import { AppBar, Box, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import '../App.css';
-const Header = () => {
+const Header = ({openDrawer,setOpenDrawer}) => {
   const menuItems = ['Home','About','Help','Sign In','Cart'];
   return(
     <div className='header'>
                 <Box>
-                  <AppBar sx={{background:'none'}} component='nav'>
+                  <AppBar sx={{background:'white'}} 
+                  component='nav' 
+                  // position='fixed'
+                  >
                     <Toolbar className='appbar'>
                     <div className='feed-me'>
                     <img
@@ -14,12 +17,12 @@ const Header = () => {
                     alt="Feed me" 
                     className="logo"
                   />
-                    <h4 style={{color:'black'}}>Feed-Me</h4>
+                    <h4 style={{color:'black',cursor:'pointer'}} onClick={()=>setOpenDrawer(!openDrawer)}>Feed-Me</h4>
                     </div>
                     <div className='menuItems'>
                     {menuItems.map((item)=>(
                       <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{background:'transparent','&:hover':{background:'none'}}} disableRipple>
+                        <ListItemButton  sx={{background:'transparent','&:hover':{background:'none'}}} disableRipple>
                           <ListItemText primary={item} sx={{color:'black',whiteSpace:'nowrap',marginRight:'20px','&:hover':{color:'orange'},font:'20px'}}/>
                         </ListItemButton>
                       </ListItem>

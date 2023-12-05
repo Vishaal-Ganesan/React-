@@ -1,19 +1,38 @@
-import { TextField,Icon } from '@mui/material'
+import { TextField,Icon, Card, CardContent, Typography, AppBar, Stack, createTheme } from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search';
 import React from 'react'
 import '../App.css'
+import FoodCard from './FoodCard';
 
 const BodyApp = () => {
+
+
+  const theme = createTheme({
+    borderColor:{
+      
+    }
+  })
   return (
-    <div className='search-bar'>
+    <div>
+      
+      <div className='search-bar'>
         <TextField 
-        sx={{width:{md:'500px',sm:'200px'}}}
+        sx={{width:{md:'1000px',sm:'300px'}
+      }}
+        color='warning'
         variant='outlined'
         placeholder='Search for cities and restaurants'
         InputProps={{
+            style:{
+              borderRadius:20,
+            },
             endAdornment:<Icon><SearchIcon/></Icon>
         }}/>
+      </div>
+      <FoodCard/>
     </div>
+
+
   )
 }
 
