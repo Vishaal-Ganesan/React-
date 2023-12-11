@@ -1,3 +1,14 @@
+@font-face {
+    font-family:'GrotesquePro Bold';
+    src: url(/components//fonts/BasisGrotesquePro-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'GrotesquePro Thin';
+    src: url(/components//fonts/BasisGrotesquePro-Thin.ttf);
+}
+
+
 .logo {
     width: 100px;
 }
@@ -39,4 +50,21 @@
     justify-content: flex-end;
     align-items: center;
 }
+
+
+.main-hotelName{
+    font-family: 'GrotesquePro Bold';
+}
+
+.cityName{
+    font-family: 'GrotesquePro Thin';
+
+}
+.main-card:hover{
+    cursor: pointer;
+    transform: scale(0.90)
+}
+
+
+
 
