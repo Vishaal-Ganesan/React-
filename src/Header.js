@@ -25,7 +25,7 @@ const Header = ({openDrawer,setOpenDrawer}) => {
                       <ListItem key={item} disablePadding>
                         <ListItemButton  sx={{background:'transparent','&:hover':{background:'none'}}} disableRipple>
                          {item === 'Cart' && <AddShoppingCartIcon sx={{font:'30px',color:'rgb(156, 156, 156)', '& .MuiListItemIcon-root':{width:0}}}/>}
-                          <ListItemText primary={item} sx={{color:'black',whiteSpace:'nowrap',marginRight:'20px','&:hover':{color:'orange'},font:'20px'}}/>
+                          <ListItemText primary={item} sx={{color:'black',whiteSpace:'nowrap','&:hover':{color:'orange'},font:'20px'}}/>
                         </ListItemButton>
                       </ListItem>
                     ))}

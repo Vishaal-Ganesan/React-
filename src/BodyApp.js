@@ -17,8 +17,7 @@ const BodyApp = () => {
       
       <div className='search-bar'>
         <TextField 
-        sx={{width:{md:'1000px',sm:'300px'}
-      }}
+        // sx={{width:{md:'940px',sm:'300px'} }}
         color='warning'
         variant='outlined'
         placeholder='Search for cities and restaurants'
